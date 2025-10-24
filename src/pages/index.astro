@@ -1,11 +1,114 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Design from '../components/Design.astro';
+import Code from '../components/Code.astro';
+import Deploy from '../components/Deploy.astro';
+import Intro from '../components/Intro.astro';
+import Profit from '../components/Profit.astro';
 ---
 
+<style>
+	.rainbow-stroke {
+		color: #441152;
+		-webkit-text-stroke: 10px transparent;
+		background: linear-gradient(90deg, #FF82A1, #FF984F, #FFD400, #00FF9D);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-stroke-width: 10px;
+		-webkit-text-stroke-color: transparent;
+		text-stroke: 10px transparent;
+	}
+
+	.rainbow-stroke-container {
+		padding: 0 16px; 
+		overflow: visible;
+	}
+	a {
+		text-underline-offset: 2px;
+		color: #3B1152;
+		/* transition: color 0.1s; */
+	}
+	a:hover {
+		color: #283C9F; 
+		text-decoration: underline wavy;
+	}
+
+	.cloud-move {
+		animation: cloud-move-x 40s linear infinite;
+	}
+
+	@keyframes cloud-move-x {
+		0% {
+			left: -30%;
+		}
+		100% {
+			left: 110%;
+		}
+	}
+</style>
+
 <Layout>
-	<Welcome />
+
+
+	{/* <div class="pointer-events-none fixed top-12 left-0 w-full h-64 z-0">
+		<img src="/cloud1.svg" class="cloud-move absolute top-4 left-[-20%] w-48" style="animation-delay: 0s;" />
+		<img src="/cloud2.svg" class="cloud-move absolute top-24 left-[-30%] w-64" style="animation-delay: 4s;" />
+		<img src="/cloud3.svg" class="cloud-move absolute top-40 left-[-25%] w-40" style="animation-delay: 8s;" />
+	</div>*/}
+
+
+
+	<div class="flex flex-col justify-center items-center font-bold z-10">
+		<p class="mt-8 text-xl">page page page page page page page</p>
+		<div class="mt-12 text-center">
+			<p class="text-4xl m-0 rainbow-stroke p-1">so you want to make a personal site</p>
+			<div class="relative">
+					<p class="text-[#551A8B] text-lg my-2 mx-5">18 or younger? <a href="https://hackclub.com/" class="underline hover:decoration-wavy">Hack Club</a> can 
+
+							<a href="/info" class="px-1 cursor-pointer transition-colors select-none bg-[#DFFF94] hover:bg-[#0DEFC9]">
+								grant you a free custom domain!
+							</a>
+						
+					</p>
+					<img src="/click.svg" class="hidden md:flex absolute -translate-x-1/2 top-8 md:top-[5px] md:-right-16"/>
+
+			</div>
+		</div>
+
+		<div class="max-w-3xl mt-12 mx-5 grid grid-cols-1 gap-8">
+
+			<div class="p-12 py-4 bg-[#FFFAF2] border-4 border-[#441152]">
+				<Intro />
+			</div>
+
+			<div class="p-12 py-4 bg-[#F8FBED] border-4 border-[#441152]">
+				<Design />
+			</div>
+
+			<div class="p-12 py-4 bg-[#EFFDE7] border-4 border-[#441152]">
+				<Code />
+			</div>
+
+			<div class="p-12 py-4 bg-[#E5FFDF] border-4 border-[#441152]">
+				<Deploy />
+			</div>
+
+
+			<div class="p-12 py-4 bg-[#E5FFDF] border-4 border-[#441152]">
+				<Profit />
+			</div>
+		</div>
+		
+
+		<img src="/grass3.svg" class="w-full mt-24"/> 
+
+		<div class="bg-[#B0CE15] w-full py-12 flex flex-col justify-center items-center text-center">
+			<p class="m-0">made with :3 by acon (repo)</p>
+			<p class="mt-2"> <span><a href="https://hackclub.com" class="underline hover:decoration-wavy transition-colors">hack club</a></span> //
+				<span><a href="https://hackclub.com/slack" class="underline hover:decoration-wavy transition-colors">slack</a></span> //
+				<span><a href="https://hackclub.com/clubs" class="underline hover:decoration-wavy transition-colors">clubs</a></span> //
+				<span><a href="https://hackclub.com/hackathons" class="underline hover:decoration-wavy transition-colors">hackathons</a></span> </p>
+		</div>
+
+	</div>
 </Layout>
