@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Topbar from '../components/Topbar.astro';
+const currentPath = Astro.url.pathname;
+---
+
+
+<Layout>
+
+    <div class="md:m-12 border-b-8 border-l-8 border-r-8 border-[#0015FF] bg-[#FFFAF2]">
+
+        <Topbar />
+
+        <div class="p-8 pt-4">
+
+            <p class="text-2xl font-bold">Coming from a local Hack Club?</p>
+            <p>Nice! Additional instructions coming soon to help you on your way :D</p>
+            <p>If you can, go through the normal submission flow! That makes it easiest for me to review.</p>
+
+
+        </div>
+
+    </div>
+
+    <div class="mt-12 hidden md:flex">.</div>
+
+</Layout>

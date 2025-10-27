@@ -1,69 +1,53 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Topbar from '../components/Topbar.astro';
+const currentPath = Astro.url.pathname;
 ---
 
 
 <Layout>
 
-    <div class="md:m-12 border-8 border-[#0015FF] bg-[#AEE2FF]">
+    <div class="md:m-12 border-b-8 border-l-8 border-r-8 border-[#0015FF] bg-[#FFFAF2]">
 
-        <div class="flex items-center bg-[#0015FF] w-full h-8">
-
-            <a href="/"><img src="/x.svg" class="max-h-6 ml-2"/></a>
-            <a href="/" class="text-white font-bold ml-2 pb-1">back</a>
-        </div> 
+        <Topbar />
 
         <div class="p-8 pt-4">
 
             <div class="">
                 <p class="text-2xl font-bold">Page: Personal Site YSWS</p>
-                <p class="text-xl font-bold">code a personal site, submit it, get approved, then get a domain!</p>
-                <p>program ends nov 7th, 11:59 pm est.</p>
-                <p class="my-0">we'll give you a $12 USD grant to buy any domain on <a href="https://porkbun.com/" target="_blank" rel="noopenner noreferrer">Porkbun</a> (or any other domain vendor).</p>
-                <p class="my-0">most .com domains fit under that price, but you're free to get any tld. some of my favourites: .zip, .ing :D</p>
+                <p class="text-xl font-bold">Code a personal site, submit it, get approved, then get a domain!</p>
+                <p>Program ends Nov 7th, 11:59 PM EST.</p>
+                <p class="my-0">We'll give you a $12 USD grant to buy any domain on <a href="https://porkbun.com/" target="_blank" rel="noopenner noreferrer">Porkbun</a> (or any other domain vendor).</p>
+                <p class="my-0">Most .com domains fit under that price, but you're free to get any tld. some of my favourites: .zip, .ing :D</p>
             </div>
 
 
             <div class="">
                 <div>
-                    <p class="text-xl font-bold">submission requirements:</p>
+                    <p class="text-xl font-bold">Submission requirements:</p>
                     <ul class="list-inside">
-                        <li>site code must be started on or after Oct 1, 2025</li>
-                        <li>github repo is started when you start working on the site, with frequent commits</li>
-                        <li>no gen ai in text (on site, repo, submission) or design/art</li>
-                        <li>do not use a template. if you're using someone else's art, credit them</li>
-                        <li>at least one unique ui element. i should be able to easily tell it's your site</li>
-                        <li>add something cool + unique! add personality!!</li>
+                        <li>Site code must be started on or after Oct 1, 2025</li>
+                        <li>Github repo is started when you start working on the site, with frequent commits</li>
+                        <li>No generative ai used for text (on site, repo, submission) or design/art</li>
+                        <li>Do not use a template. If you're using someone else's art, credit them</li>
+                        <li>At least one unique UI element. I should be able to easily tell it's your site!</li>
+                        <li>Add something cool + unique! Add personality!!</li>
                         <li>IF YOU WANT ANY OF THE ADDITIONAL PRIZES, <a href="https://hackatime.hackclub.com/" target="_blank" rel="noopenner noreferrer">HACKATIME</a> MUST BE INSTALLED</li>
                     </ul>				
-                    <p class="text-xl">before submitting, make sure:</p>
+                    <p class="text-xl font-bold">Before submitting, make sure:</p>
                     <ul class="list-inside">
-                        <li>the site works on both desktop and mobile</li>
-                        <li>the site is deployed (give me a link to visit!!!)</li>
-                        <li>the repo's readme.md is written. include what you built it with, features, screenshot of site!</li>
-                    </ul>	
-                    <p class="text-xl">if you are working on an existing site:</p>
-                    <ul class="list-inside">
-                        <li>improvements must be major; must either look or function like an entirely new site</li>
-                        <li>hackatime must be installed. time spent may impact likelyhood of getting prizes</li>
-                        <li>take screenshots of what your site looked like beforehand, and document the changes you make</li>
+                        <li>Your site works on both desktop and mobile</li>
+                        <li>Your site is deployed (give me a link to visit!!!)</li>
+                        <li>Repo's readme.md is written. Include what you built it with, features, screenshot of site!</li>
                     </ul>														
                 </div>
                 <div>
-                    <p class="text-xl font-bold">how to submit:</p>
+                    <p class="text-xl font-bold">What you'll get:</p>
                     <ol class="list-inside">
-                        <li>join the hack club slack!</li>
-                        <li>post a ship message in #personal-site-ships! include: repo link, deployed site link, screenshots, description. make it high effort!</li>
-                        <li>i'll respond with if it's accepted, or changes to make. if it passes, i'll give you a form to fill out for fulfillment details!</li>
-                    </ol>										
-                </div>
-                <div>
-                    <p class="text-xl font-bold">what you'll get:</p>
-                    <ol class="list-inside">
-                        <li>a $12 HCB card grant to buy any domain</li>
-                        <li>shirt, if it meets a higher quality bar!!! (the current bar is: needs to match the current quality of the example sites)</li>
-                        <li>a chance to get a custom cat pfp when i open up queue (sites i like more get priority)</li>
-                        <li>possibly smaller pieces of swag (ie: stickers) if i can figure out shipping</li>
+                        <li>$12 HCB card grant to buy any domain</li>
+                        <li>Shirt, if it meets a higher quality bar!!! (Current bar: needs to match the current quality of the example sites)</li>
+                        <li>Chances to get a custom cat pfp when I (@acon) open up queue (priority goes to cooler sites!)</li>
+                        <li>Possibly smaller pieces of swag (ie: stickers), depending on shipping logistics</li>
                     </ol>										
                 </div>
                 <img src="/shirt.png" class="max-h-96 mt-4"/>
@@ -74,7 +58,5 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div class="mt-12 hidden md:flex">.</div>
-
-
 
 </Layout>

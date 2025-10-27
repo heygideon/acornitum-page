@@ -1,0 +1,16 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<div class="grid lg:grid-cols-5 xl:grid-cols-6 items-center bg-[#0015FF] w-full lg:h-12">
+    <div class="relative lg:block hidden">
+        <a href="/"><img src="/x.svg" class="max-h-6 ml-2 absolute"/></a>
+        <a href="/" class="text-white no-underline font-bold ml-4 mr-4 px-8">back to main</a>
+    </div>
+    
+    <a href="/" class={`text-white no-underline font-bold lg:mr-1 p-3 px-8 lg:hidden ${currentPath === '/info' ? 'bg-[#0015FF]' : 'bg-[#0015FF]'}`}>back to main</a>
+    <a href="/info" class={`text-white no-underline font-bold lg:mr-1 p-3 px-8 ${currentPath === '/info' ? 'bg-[#5EC3D3]' : 'bg-[#023EFF]'}`}>about</a>
+    <a href="/submit" class={`text-white no-underline font-bold lg:mr-1 p-3 px-8 ${currentPath === '/submit' ? 'bg-[#5EC3D3]' : 'bg-[#0351FF]'}`}>how to submit</a>
+    <a href="/clubs" class={`text-white no-underline font-bold lg:mr-1 p-3 px-8 ${currentPath === '/clubs' ? 'bg-[#5EC3D3]' : 'bg-[#045DFE]'}`}>clubs</a>
+    <a href="/faq" class={`text-white no-underline font-bold p-3 px-8 ${currentPath === '/faq' ? 'bg-[#5EC3D3]' : 'bg-[#046EFE]'}`}>faq</a>
+</div> 

@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Topbar from '../components/Topbar.astro';
+const currentPath = Astro.url.pathname;
+---
+
+
+<Layout>
+
+    <div class="md:m-12 border-b-8 border-l-8 border-r-8 border-[#0015FF] bg-[#FFFAF2]">
+
+        <Topbar />
+
+        <div class="p-8 pt-4">
+
+            <p class="text-2xl font-bold">Frequently Asked Questions</p>
+            <p>This page will get updated as people ask more questions :D</p>
+
+            <p class="text-xl font-bold">Am I allowed to work on an existing site?</p>
+            <p>Yes! However, there are a few more requirements:</p>
+                <ul class="list-inside">
+                    <li>Improvements must be major; must either look or function like an entirely new site</li>
+                    <li>Hackatime must be installed. Time spent may impact likelyhood of getting prizes (for existing sites only)</li>
+                    <li>Take screenshots of what your site looked like beforehand, and document the exact changes you make!</li>
+                </ul>	
+
+            <p>In your ship message, include that this is an update to an existing site, time spent, before + after screenshots, and exact changes</p>
+
+
+        </div>
+
+    </div>
+
+    <div class="mt-12 hidden md:flex">.</div>
+
+</Layout>

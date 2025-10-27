@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Topbar from '../components/Topbar.astro';
+const currentPath = Astro.url.pathname;
+---
+
+
+<Layout>
+
+    <div class="md:m-12 border-b-8 border-l-8 border-r-8 border-[#0015FF] bg-[#FFFAF2]">
+
+        <Topbar />
+
+        <div class="p-8 pt-4">
+            <p class="text-2xl font-bold">How to Submit</p>
+
+            <p>Done your site? Here's how to submit it!</p>
+
+            <p class="text-xl font-bold">1. Join #personal-site-ships on Hack Club Slack</p>
+            <p>If you're not already on the Slack, you can join here: <a href="https://hackclub.com/slack/" target="_blank" rel="noopenner noreferrer">https://hackclub.com/slack/</a></p>
+            <p>Hack Club Slack is a large community where teen coders and makers can interact with one another!</p>
+            <p>Once you're in, head on over to the <a href="https://hackclub.slack.com/archives/C09NA4Z11PG" target="_blank" rel="noopenner noreferrer">#personal-site-ships</a> channel - there is where you'll be submitting your site.</p>
+
+            <p class="text-xl font-bold">2. Post a ship message for your site</p>
+            <p>Post the site you made in <a href="https://hackclub.slack.com/archives/C09NA4Z11PG" target="_blank" rel="noopenner noreferrer">#personal-site-ships</a> - ship it by sharing it with the world, via a slack message!</p>
+            <p class="font-bold">In your ship message, include:</p>
+            <ul>
+                <li>Github repo link</li>
+                <li>Link to your deployed site</li>
+                <li>Screenshots of your site</li>
+                <li>Description/features of your site</li>
+                <li>Let me know if you are trying to get the additional prizes (ie: shirt)</li>
+            </ul>
+            <p class="font-bold">Other things you could include:</p>
+            <ul>
+                <li>Whether this is your first or millionth site</li>
+                <li>Design thought process behind your site</li>
+                <li>Was there a particularily challenging or technical or cool part?</li>
+                <li>What did you learn while making it?</li>
+                <li>Advice for others?</li>
+                <li>Anything else you want to mention!</li>
+            </ul>
+            <p>Please make sure this message is high effort. If there's something not obvious about your site (ie: it's much more technical below the surface), talk about it! It might be missed otherwise.</p>
+
+            <p class="text-xl font-bold">3. Wait for approval/feedback!</p>
+            <p>Your site will be reviewed within a business week.</p>
+            <p>After @acon reacts with a ✅ emoji, it's approved! We'll reply with a fulfillment form in thread for you to fill out to get your domain :D</p>
+
+        </div>
+
+    </div>
+
+    <div class="mt-12 hidden md:flex">.</div>
+
+</Layout>
