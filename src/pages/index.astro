@@ -56,7 +56,7 @@ import Profit from '../components/Profit.astro';
 		<img src="/cloud3.svg" class="cloud-move absolute top-40 left-[-25%] w-40" style="animation-delay: 8s;" />
 	</div>*/}
 
-	<a href="https://hackclub.com/" target="_blank" rel="noopenner noreferrer"><img style="position: absolute; top: 20px; left: -1px; border: 0; width: 256px; z-index: 999;" class="hover:scale-105 transition-transform duration-150" src="https://assets.hackclub.com/banners/2025.svg" alt="Hack Club"/></a>
+	<a href="https://hackclub.com/" target="_blank" rel="noopenner noreferrer"><img style="position: absolute; top: 20px; left: -1px; border: 0; width: 256px; z-index: 999;" class="hover:scale-105 transition-transform duration-150 hidden md:block" src="https://assets.hackclub.com/banners/2025.svg" alt="Hack Club"/></a>
 
 
 
@@ -104,12 +104,30 @@ import Profit from '../components/Profit.astro';
 
 		<img src="/grass3.svg" class="w-full mt-24"/> 
 
-		<div class="bg-[#B0CE15] w-full py-12 flex flex-col justify-center items-center text-center">
+		<div class="bg-[#B0CE15] w-full py-4 md:py-20 flex flex-col justify-center items-center text-center">
+
+			<div class="md:absolute md:-right-8 xl:right-32 scale-50 xl:scale-75">
+				<div class="grid grid-cols-3 gap-x-8">
+					<img src="/flower1.svg"/>
+					<img src="/flower2.svg"/>
+					<img src="/flower3.svg"/>
+				</div>
+			</div>
+
 			<p class="m-0">made with :3 by acon (<a href="https://github.com/acornitum/page" target="_blank" rel="noopenner noreferrer">repo</a>)</p>
 			<p class="mt-2"> <span><a href="https://hackclub.com" class="underline hover:decoration-wavy transition-colors">hack club</a></span> //
 				<span><a href="https://hackclub.com/slack" class="underline hover:decoration-wavy transition-colors">slack</a></span> //
 				<span><a href="https://hackclub.com/clubs" class="underline hover:decoration-wavy transition-colors">clubs</a></span> //
-				<span><a href="https://hackclub.com/hackathons" class="underline hover:decoration-wavy transition-colors">hackathons</a></span> </p>
+				<span><a href="https://hackclub.com/hackathons" class="underline hover:decoration-wavy transition-colors">hackathons</a></span> 
+			</p>
+
+			<div class="md:absolute md:-left-8 xl:left-32 scale-50 xl:scale-75">
+				<div class="grid grid-cols-3 gap-x-8">
+					<img src="/flower3.svg" class="-scale-x-100"/>
+					<img src="/flower2.svg" class="-scale-x-100"/>
+					<img src="/flower1.svg" class="-scale-x-100"/>
+				</div>
+			</div>
 		</div>
 
 	</div>
